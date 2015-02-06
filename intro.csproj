@@ -65,8 +65,11 @@
     <Content Include="css\site.css" />
     <Content Include="DoYouEvenVisualStudioBro.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\BatchBuild.png" />
     <Content Include="Images\ChangeTheme1.png" />
     <Content Include="Images\ChangeTheme2.png" />
+    <Content Include="Images\defaultToolbar.png" />
+    <Content Include="Images\DualViewEditing.png" />
     <Content Include="Images\EditProjectXml1.png" />
     <Content Include="Images\EditProjectXml2.png" />
     <Content Include="Images\EditProjectXml3.png" />
@@ -74,10 +77,13 @@
     <Content Include="Images\gitExtensionsBar.png" />
     <Content Include="Images\NewProject.png" />
     <Content Include="Images\NewProjectAndSolution.png" />
+    <Content Include="Images\rightClickToolbarsMenu.png" />
     <Content Include="Images\ShowAllFilesInFolder1.png" />
     <Content Include="Images\ShowAllFilesInFolder2.png" />
     <Content Include="Images\SolutionExplorer.png" />
     <Content Include="Images\StartPage.png" />
+    <Content Include="Images\textEditor.png" />
+    <Content Include="Images\toolbox.png" />
     <Content Include="Images\TurnOffPreview1.png" />
     <Content Include="Images\TurnOffPreview2.png" />
     <Content Include="js\bootstrap.js" />
