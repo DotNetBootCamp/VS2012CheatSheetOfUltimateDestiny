@@ -4,6 +4,7 @@
     text-align:center;
     display:inline;
     max-height:400px;
+    margin-bottom:10px;
 }
 body
 {
@@ -16,4 +17,18 @@ body
 #sidebar
 {
     margin-top:5%;
+}
+.header
+{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #6f5499;
+    background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%);
+    background-repeat: repeat-x;
+    color: #cdbfe3;
+    margin-top:2%;
+}
+.section
+{
+    margin-bottom:60px;
 }
