@@ -57,13 +57,47 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\site.css" />
     <Content Include="DoYouEvenVisualStudioBro.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\ChangeTheme1.png" />
+    <Content Include="Images\ChangeTheme2.png" />
+    <Content Include="Images\EditProjectXml1.png" />
+    <Content Include="Images\EditProjectXml2.png" />
+    <Content Include="Images\EditProjectXml3.png" />
+    <Content Include="Images\FileProperties.png" />
+    <Content Include="Images\gitExtensionsBar.png" />
+    <Content Include="Images\NewProject.png" />
+    <Content Include="Images\NewProjectAndSolution.png" />
+    <Content Include="Images\ShowAllFilesInFolder1.png" />
+    <Content Include="Images\ShowAllFilesInFolder2.png" />
+    <Content Include="Images\SolutionExplorer.png" />
+    <Content Include="Images\StartPage.png" />
+    <Content Include="Images\TurnOffPreview1.png" />
+    <Content Include="Images\TurnOffPreview2.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\site.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
