@@ -1,0 +1,19 @@
+﻿.img-responsive
+{
+    max-width:80%;
+    text-align:center;
+    display:inline;
+    max-height:400px;
+}
+body
+{
+    text-align:center;
+}
+.fancybox
+{
+    display:block;
+}
+#sidebar
+{
+    margin-top:5%;
+}
