@@ -20,13 +20,20 @@ body
 }
 .header
 {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding: 60px 0;
     background-color: #6f5499;
     background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%);
     background-repeat: repeat-x;
     color: #cdbfe3;
     margin-top:2%;
+}
+.header small
+{
+    color: #B6ABC9;
+}
+.header p
+{
+    padding:0 14%;
 }
 .section
 {
