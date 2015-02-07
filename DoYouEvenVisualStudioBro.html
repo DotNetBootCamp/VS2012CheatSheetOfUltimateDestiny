@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>VS 2012 Cheat Sheet</title>
@@ -34,7 +34,16 @@
             <a href="#toolbars" class="list-group-item">toolbars</a>
             <a href="#batchBuild" class="list-group-item">batchBuild</a>
             <a href="#nuget" class="list-group-item">nuget</a>
-            <a href="#ConfigurationManager" class="list-group-item">ConfigurationManager</a>
+            <a href="#configurationManager" class="list-group-item">ConfigurationManager</a>
+            <a href="#addingUsingStatements" class="list-group-item">addingUsingStatements</a>
+            <a href="#attachToProcess" class="list-group-item">attachToProcess</a>
+            <a href="#addingAReference" class="list-group-item">addingAReference</a>
+            <a href="#breakPoints" class="list-group-item">breakPoints</a>
+            <a href="#codeCoverage" class="list-group-item">codeCoverage</a>
+            <a href="#codeAnalysys" class="list-group-item">codeAnalysys</a>
+            <a href="#outputs" class="list-group-item">outputs</a>
+            <a href="#tests" class="list-group-item">tests</a>
+            <a href="#FindAndReplace" class="list-group-item">FindAndReplace</a>
         </div>
     </div>
     <div>
@@ -69,6 +78,12 @@
             <hr />
             <a class="fancybox" rel="group" href="Images/SolutionExplorer.png">
                 <img src="Images/SolutionExplorer.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/SearchingInSolutionTree.png">
+                <img src="Images/SearchingInSolutionTree.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/SetAsStartPage.png">
+                <img src="Images/SetAsStartPage.png" alt="" class="img-responsive" />
             </a>
         </div>
         <div id="keyboardShortcuts" class="section">
@@ -178,21 +193,101 @@
                 <img src="Images/nuget.png" alt="" class="img-responsive" />
             </a>
         </div>
-        <div id="ConfigurationManager" class="section">
+        <div id="configurationManager" class="section">
             <h1>ConfigurationManager</h1>
             <hr />
             <a class="fancybox" rel="group" href="Images/ConfigurationManager.png">
                 <img src="Images/ConfigurationManager.png" alt="" class="img-responsive" />
             </a>
         </div>
-        <div id="addingReferences" class="section">
+        <div id="addingUsingStatements" class="section">
             <h1>AddingReferences</h1>
             <hr />
-            <a class="fancybox" rel="group" href="Images/AddingReferences1.png">
-                <img src="Images/AddingReferences1.png" alt="" class="img-responsive" />
+            <a class="fancybox" rel="group" href="Images/AddingUsings1.png">
+                <img src="Images/AddingUsings1.png" alt="" class="img-responsive" />
             </a>
-            <a class="fancybox" rel="group" href="Images/AddingReferences2.png">
-                <img src="Images/AddingReferences2.png" alt="" class="img-responsive" />
+            <a class="fancybox" rel="group" href="Images/AddingUsings2.png">
+                <img src="Images/AddingUsings2.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="attachToProcess" class="section">
+            <h1>AddingReferences</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/attachToProcess.png">
+                <img src="Images/attachToProcess.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="addingAReference" class="section">
+            <h1>AddingAReference</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/AddingReferenceToProject.png">
+                <img src="Images/AddingReferenceToProject.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/AddingAReferenceToProjectInSolution.png">
+                <img src="Images/AddingAReferenceToProjectInSolution.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="breakPoints" class="section">
+            <h1>AddingAReference</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/BreakPointBasic.png">
+                <img src="Images/BreakPointBasic.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/BreakPointRightClick.png">
+                <img src="Images/BreakPointRightClick.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="codeCoverage" class="section">
+            <h1>CodeCoverage</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/CodeCoverage.png">
+                <img src="Images/CodeCoverage.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="codeAnalysys" class="section">
+            <h1>code Analysys</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/CodeAnalysysRules.png">
+                <img src="Images/CodeAnalysysRules.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/RunCodeAnalysys.png">
+                <img src="Images/RunCodeAnalysys.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/CodeAnalysysResults.png">
+                <img src="Images/CodeAnalysysResults.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="outputs" class="section">
+            <h1>code Analysys</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/OutputWindow.png">
+                <img src="Images/OutputWindow.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/ErrorOutput.png">
+                <img src="Images/ErrorOutput.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/Warnings.png">
+                <img src="Images/Warnings.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="tests" class="section">
+            <h1>code Analysys</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/RunAllTests.png">
+                <img src="Images/RunAllTests.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/TestExplorer.png">
+                <img src="Images/TestExplorer.png" alt="" class="img-responsive" />
+            </a>
+        </div>
+        <div id="FindAndReplace" class="section">
+            <h1>code Analysys</h1>
+            <hr />
+            <a class="fancybox" rel="group" href="Images/FindAndReplaceInFiles.png">
+                <img src="Images/FindAndReplaceInFiles.png" alt="" class="img-responsive" />
+            </a>
+            <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
+                <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
             </a>
         </div>
     </div>
