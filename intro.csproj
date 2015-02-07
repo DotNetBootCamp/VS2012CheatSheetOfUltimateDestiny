@@ -39,6 +39,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,9 +69,12 @@
     <Content Include="css\site.css" />
     <Content Include="DoYouEvenVisualStudioBro.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\AddingReferences1.png" />
+    <Content Include="Images\AddingReferences2.png" />
     <Content Include="Images\BatchBuild.png" />
     <Content Include="Images\ChangeTheme1.png" />
     <Content Include="Images\ChangeTheme2.png" />
+    <Content Include="Images\ConfigurationManager.png" />
     <Content Include="Images\defaultToolbar.png" />
     <Content Include="Images\DualViewEditing.png" />
     <Content Include="Images\EditProjectXml1.png" />
@@ -77,6 +84,7 @@
     <Content Include="Images\gitExtensionsBar.png" />
     <Content Include="Images\NewProject.png" />
     <Content Include="Images\NewProjectAndSolution.png" />
+    <Content Include="Images\nuget.png" />
     <Content Include="Images\rightClickToolbarsMenu.png" />
     <Content Include="Images\ShowAllFilesInFolder1.png" />
     <Content Include="Images\ShowAllFilesInFolder2.png" />
@@ -95,6 +103,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelloWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +113,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

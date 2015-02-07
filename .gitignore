@@ -50,3 +50,5 @@ Ankh.NoLoad
 !/packages/*/lib/*.dll
 !/packages/*/lib/*/*.dll
 bootstrap-3.3.2-dist.zip
+packages/*
+TestResults/*
