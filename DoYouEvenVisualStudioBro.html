@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>VS 2012 Cheat Sheet</title>
@@ -17,278 +17,283 @@ a<!DOCTYPE html>
     <![endif]-->
 </head>
 <body>
-    <div class="col-md-2">
-        <div class="list-group" id="sidebar">
-            <a href="#StartPage" class="list-group-item">Start Page</a>
-            <a href="#NewProject" class="list-group-item">New Project</a>
-            <a href="#solutionExplorer" class="list-group-item">Solution Explorer</a>
-            <a href="#keyboardShortcuts" class="list-group-item">Keyboard Shortcuts</a>
-            <a href="#turnOffPreview" class="list-group-item">Turn Off Preview</a>
-            <a href="#editProjectXml" class="list-group-item">Edit Project Xml</a>
-            <a href="#changeTheme" class="list-group-item">Change Theme</a>
-            <a href="#showFilesInFolder" class="list-group-item">Show all files in folder</a>
-            <a href="#fileProperties" class="list-group-item">File Properties</a>
-            <a href="#gitExtensionsBar" class="list-group-item">Git Extensions Bar</a>
-            <a href="#toolbox" class="list-group-item">toolbox</a>
-            <a href="#textEditor" class="list-group-item">textEditor</a>
-            <a href="#toolbars" class="list-group-item">toolbars</a>
-            <a href="#batchBuild" class="list-group-item">batchBuild</a>
-            <a href="#nuget" class="list-group-item">nuget</a>
-            <a href="#configurationManager" class="list-group-item">ConfigurationManager</a>
-            <a href="#addingUsingStatements" class="list-group-item">addingUsingStatements</a>
-            <a href="#attachToProcess" class="list-group-item">attachToProcess</a>
-            <a href="#addingAReference" class="list-group-item">addingAReference</a>
-            <a href="#breakPoints" class="list-group-item">breakPoints</a>
-            <a href="#codeCoverage" class="list-group-item">codeCoverage</a>
-            <a href="#codeAnalysys" class="list-group-item">codeAnalysys</a>
-            <a href="#outputs" class="list-group-item">outputs</a>
-            <a href="#tests" class="list-group-item">tests</a>
-            <a href="#FindAndReplace" class="list-group-item">FindAndReplace</a>
-        </div>
+    <div id="backToTop" >
+        <a onclick="$(window).scrollTop(0);" class="list-group-item">Back To Top</a>
     </div>
-    <div>
-        <div class="header">
-            <h1>VS 2012 Cheat Sheet Of Ultimate Destiny <small>By Ryan Kotzen</small></h1>
-            <p>This is not a comprehensive overview for visual studio, more of a cheat sheet that people can use as a reference for some of the most common and important operations- (that I use or which I feel would be usefull to new developers). I did a clean install of VS2012 and proceeded to setup a basic environment since I am about to train people using this IDE. Due to licencing reasons, vs2013 won't be used, and 2015 is still in preview</p>
-            <p>I am by no means a front end developer but due to masochistic tendancies, this cheat sheet has been built using html, css & js instead of MS Word. Feel free to contribute at <a href="https://github.com/Sereph/VS2012CheatSheetOfUltimateDestiny">GitHub</a></p>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group" id="sidebar">
+                <a href="#StartPage" class="list-group-item">Start Page</a>
+                <a href="#NewProject" class="list-group-item">New Project</a>
+                <a href="#solutionExplorer" class="list-group-item">Solution Explorer</a>
+                <a href="#keyboardShortcuts" class="list-group-item">Keyboard Shortcuts</a>
+                <a href="#turnOffPreview" class="list-group-item">Turn Off Preview</a>
+                <a href="#editProjectXml" class="list-group-item">Edit Project Xml</a>
+                <a href="#changeTheme" class="list-group-item">Change Theme</a>
+                <a href="#showFilesInFolder" class="list-group-item">Show all files in folder</a>
+                <a href="#fileProperties" class="list-group-item">File Properties</a>
+                <a href="#gitExtensionsBar" class="list-group-item">Git Extensions Bar</a>
+                <a href="#toolbox" class="list-group-item">toolbox</a>
+                <a href="#textEditor" class="list-group-item">textEditor</a>
+                <a href="#toolbars" class="list-group-item">toolbars</a>
+                <a href="#batchBuild" class="list-group-item">batchBuild</a>
+                <a href="#nuget" class="list-group-item">nuget</a>
+                <a href="#configurationManager" class="list-group-item">ConfigurationManager</a>
+                <a href="#addingUsingStatements" class="list-group-item">addingUsingStatements</a>
+                <a href="#attachToProcess" class="list-group-item">attachToProcess</a>
+                <a href="#addingAReference" class="list-group-item">addingAReference</a>
+                <a href="#breakPoints" class="list-group-item">breakPoints</a>
+                <a href="#codeCoverage" class="list-group-item">codeCoverage</a>
+                <a href="#codeAnalysys" class="list-group-item">codeAnalysys</a>
+                <a href="#outputs" class="list-group-item">outputs</a>
+                <a href="#tests" class="list-group-item">tests</a>
+                <a href="#FindAndReplace" class="list-group-item">FindAndReplace</a>
+            </div>
         </div>
-        <div id="StartPage" class="section">
-            <h1>Start Page</h1>
-            <p>
-                This will pop up every time you open visual studio instead of a project/sln/other file directly, feel free to turn it off using the buttons in the bottom right.<br />
-                It will display your most recent solution files that you opened, and allow you to pin them there so they are always available. You can also create new projects from here, but this is easily accessible from the "file" menu or by right clicking on your solution file.
-            </p>
-            <a class="fancybox" rel="group" href="Images/StartPage.png">
-                <img src="Images/StartPage.png" alt="" class="img-responsive" /></a>
-        </div>
-        <div id="NewProject" class="section">
-            <h1>Creating a new project</h1>
-            <hr />
-            <p>This is useful when you want to ... you know ... create a new project. If you hit this without a solution open it will go ahead and create that for you as well.</p>
-            <a class="fancybox" rel="group" href="Images/NewProjectAndSolution.png">
-                <img src="Images/NewProjectAndSolution.png" alt="" class="img-responsive" />
-            </a>
-            <p>From here you can select the type of project you are going to create, this is based on the various libraries, updates and templates you have installed. You can also search online for the latest template types and eventually create your own</p>
-            <a class="fancybox" rel="group" href="Images/NewProject.png">
-                <img src="Images/NewProject.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="solutionExplorer" class="section">
-            <h1>Solution explorer</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/SolutionExplorer.png">
-                <img src="Images/SolutionExplorer.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/SearchingInSolutionTree.png">
-                <img src="Images/SearchingInSolutionTree.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/SetAsStartPage.png">
-                <img src="Images/SetAsStartPage.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="keyboardShortcuts" class="section">
-            <h1>keyboardShortcuts</h1>
-            <hr />
-            <p>Do yourself a favour, get ReSharper, it will make your life better in almost every way, here is a handy dandy pdf with some common commands</p>
-            <a href="https://www.jetbrains.com/resharper/docs/ReSharper80DefaultKeymap_VS_scheme.pdf">ReSharper keyboard shortcuts</a>
-            <p>Here are the ones for stock:</p>
-            <a href="http://visualstudioshortcuts.com/2012/">VS2012 Keyboard Shortcuts</a>
-            <p>It may be tempting (and it is definitely possible) to change them to suit your needs, but when you are working at someone else's pc, that isn't going to work. I recommend you just get used to them as is.</p>
-        </div>
-        <div id="turnOffPreview" class="section">
-            <h1>Turning off the preview "feature"</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/TurnOffPreview1.png">
-                <img src="Images/TurnOffPreview1.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/TurnOffPreview2.png">
-                <img src="Images/TurnOffPreview2.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="editProjectXml" class="section">
-            <h1>Edit Project XML</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/EditProjectXml1.png">
-                <img src="Images/EditProjectXml1.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/EditProjectXml2.png">
-                <img src="Images/EditProjectXml2.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/EditProjectXml3.png">
-                <img src="Images/EditProjectXml3.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="changeTheme" class="section">
-            <h1>Change Theme</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/ChangeTheme1.png">
-                <img src="Images/ChangeTheme1.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/ChangeTheme2.png">
-                <img src="Images/ChangeTheme2.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="showFilesInFolder" class="section">
-            <h1>Show (hidden) Files In Folder</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/ShowAllFilesInFolder1.png">
-                <img src="Images/ShowAllFilesInFolder1.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/ShowAllFilesInFolder2.png">
-                <img src="Images/ShowAllFilesInFolder2.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="fileProperties" class="section">
-            <h1>File Properties</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/FileProperties.png">
-                <img src="Images/FileProperties.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="gitExtensionsBar" class="section">
-            <h1>gitExtensionsBar</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/gitExtensionsBar.png">
-                <img src="Images/gitExtensionsBar.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="toolbox" class="section">
-            <h1>toolbox</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/toolbox.png">
-                <img src="Images/toolbox.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="textEditor" class="section">
-            <h1>textEditor</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/textEditor.png">
-                <img src="Images/textEditor.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/DualViewEditing.png">
-                <img src="Images/DualViewEditing.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="toolbars" class="section">
-            <h1>toolbars</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/defaultToolbar.png">
-                <img src="Images/defaultToolbar.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/rightClickToolbarsMenu.png">
-                <img src="Images/rightClickToolbarsMenu.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="batchBuild" class="section">
-            <h1>batchBuild</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/batchBuild.png">
-                <img src="Images/batchBuild.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="nuget" class="section">
-            <h1>nuget</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/nuget.png">
-                <img src="Images/nuget.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="configurationManager" class="section">
-            <h1>ConfigurationManager</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/ConfigurationManager.png">
-                <img src="Images/ConfigurationManager.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="addingUsingStatements" class="section">
-            <h1>AddingReferences</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/AddingUsings1.png">
-                <img src="Images/AddingUsings1.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/AddingUsings2.png">
-                <img src="Images/AddingUsings2.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="attachToProcess" class="section">
-            <h1>AddingReferences</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/attachToProcess.png">
-                <img src="Images/attachToProcess.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="addingAReference" class="section">
-            <h1>AddingAReference</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/AddingReferenceToProject.png">
-                <img src="Images/AddingReferenceToProject.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/AddingAReferenceToProjectInSolution.png">
-                <img src="Images/AddingAReferenceToProjectInSolution.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="breakPoints" class="section">
-            <h1>AddingAReference</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/BreakPointBasic.png">
-                <img src="Images/BreakPointBasic.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/BreakPointRightClick.png">
-                <img src="Images/BreakPointRightClick.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="codeCoverage" class="section">
-            <h1>CodeCoverage</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/CodeCoverage.png">
-                <img src="Images/CodeCoverage.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="codeAnalysys" class="section">
-            <h1>code Analysys</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/CodeAnalysysRules.png">
-                <img src="Images/CodeAnalysysRules.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/RunCodeAnalysys.png">
-                <img src="Images/RunCodeAnalysys.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/CodeAnalysysResults.png">
-                <img src="Images/CodeAnalysysResults.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="outputs" class="section">
-            <h1>code Analysys</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/OutputWindow.png">
-                <img src="Images/OutputWindow.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/ErrorOutput.png">
-                <img src="Images/ErrorOutput.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/Warnings.png">
-                <img src="Images/Warnings.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="tests" class="section">
-            <h1>code Analysys</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/RunAllTests.png">
-                <img src="Images/RunAllTests.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/TestExplorer.png">
-                <img src="Images/TestExplorer.png" alt="" class="img-responsive" />
-            </a>
-        </div>
-        <div id="FindAndReplace" class="section">
-            <h1>code Analysys</h1>
-            <hr />
-            <a class="fancybox" rel="group" href="Images/FindAndReplaceInFiles.png">
-                <img src="Images/FindAndReplaceInFiles.png" alt="" class="img-responsive" />
-            </a>
-            <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
-                <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
-            </a>
+        <div class="col-md-10">
+            <div class="header">
+                <h1>VS 2012 Cheat Sheet Of Ultimate Destiny <small>By Ryan Kotzen</small></h1>
+                <p>This is not a comprehensive overview for visual studio, more of a cheat sheet that people can use as a reference for some of the most common and important operations- (that I use or which I feel would be usefull to new developers). I did a clean install of VS2012 and proceeded to setup a basic environment since I am about to train people using this IDE. Due to licencing reasons, vs2013 won't be used, and 2015 is still in preview</p>
+                <p>I am by no means a front end developer but due to masochistic tendancies, this cheat sheet has been built using html, css & js instead of MS Word. Feel free to contribute at <a href="https://github.com/Sereph/VS2012CheatSheetOfUltimateDestiny">GitHub</a></p>
+            </div>
+            <div id="StartPage" class="section">
+                <h1>Start Page</h1>
+                <p>
+                    This will pop up every time you open visual studio instead of a project/sln/other file directly, feel free to turn it off using the buttons in the bottom right.<br />
+                    It will display your most recent solution files that you opened, and allow you to pin them there so they are always available. You can also create new projects from here, but this is easily accessible from the "file" menu or by right clicking on your solution file.
+                </p>
+                <a class="fancybox" rel="group" href="Images/StartPage.png">
+                    <img src="Images/StartPage.png" alt="" class="img-responsive" /></a>
+            </div>
+            <div id="NewProject" class="section">
+                <h1>Creating a new project</h1>
+                <hr />
+                <p>This is useful when you want to ... you know ... create a new project. If you hit this without a solution open it will go ahead and create that for you as well.</p>
+                <a class="fancybox" rel="group" href="Images/NewProjectAndSolution.png">
+                    <img src="Images/NewProjectAndSolution.png" alt="" class="img-responsive" />
+                </a>
+                <p>From here you can select the type of project you are going to create, this is based on the various libraries, updates and templates you have installed. You can also search online for the latest template types and eventually create your own</p>
+                <a class="fancybox" rel="group" href="Images/NewProject.png">
+                    <img src="Images/NewProject.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="solutionExplorer" class="section">
+                <h1>Solution explorer</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/SolutionExplorer.png">
+                    <img src="Images/SolutionExplorer.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/SearchingInSolutionTree.png">
+                    <img src="Images/SearchingInSolutionTree.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/SetAsStartPage.png">
+                    <img src="Images/SetAsStartPage.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="keyboardShortcuts" class="section">
+                <h1>keyboardShortcuts</h1>
+                <hr />
+                <p>Do yourself a favour, get ReSharper, it will make your life better in almost every way, here is a handy dandy pdf with some common commands</p>
+                <a href="https://www.jetbrains.com/resharper/docs/ReSharper80DefaultKeymap_VS_scheme.pdf">ReSharper keyboard shortcuts</a>
+                <p>Here are the ones for stock:</p>
+                <a href="http://visualstudioshortcuts.com/2012/">VS2012 Keyboard Shortcuts</a>
+                <p>It may be tempting (and it is definitely possible) to change them to suit your needs, but when you are working at someone else's pc, that isn't going to work. I recommend you just get used to them as is.</p>
+            </div>
+            <div id="turnOffPreview" class="section">
+                <h1>Turning off the preview "feature"</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/TurnOffPreview1.png">
+                    <img src="Images/TurnOffPreview1.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/TurnOffPreview2.png">
+                    <img src="Images/TurnOffPreview2.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="editProjectXml" class="section">
+                <h1>Edit Project XML</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/EditProjectXml1.png">
+                    <img src="Images/EditProjectXml1.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/EditProjectXml2.png">
+                    <img src="Images/EditProjectXml2.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/EditProjectXml3.png">
+                    <img src="Images/EditProjectXml3.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="changeTheme" class="section">
+                <h1>Change Theme</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/ChangeTheme1.png">
+                    <img src="Images/ChangeTheme1.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/ChangeTheme2.png">
+                    <img src="Images/ChangeTheme2.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="showFilesInFolder" class="section">
+                <h1>Show (hidden) Files In Folder</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/ShowAllFilesInFolder1.png">
+                    <img src="Images/ShowAllFilesInFolder1.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/ShowAllFilesInFolder2.png">
+                    <img src="Images/ShowAllFilesInFolder2.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="fileProperties" class="section">
+                <h1>File Properties</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/FileProperties.png">
+                    <img src="Images/FileProperties.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="gitExtensionsBar" class="section">
+                <h1>gitExtensionsBar</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/gitExtensionsBar.png">
+                    <img src="Images/gitExtensionsBar.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="toolbox" class="section">
+                <h1>toolbox</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/toolbox.png">
+                    <img src="Images/toolbox.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="textEditor" class="section">
+                <h1>textEditor</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/textEditor.png">
+                    <img src="Images/textEditor.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/DualViewEditing.png">
+                    <img src="Images/DualViewEditing.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="toolbars" class="section">
+                <h1>toolbars</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/defaultToolbar.png">
+                    <img src="Images/defaultToolbar.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/rightClickToolbarsMenu.png">
+                    <img src="Images/rightClickToolbarsMenu.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="batchBuild" class="section">
+                <h1>batchBuild</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/batchBuild.png">
+                    <img src="Images/batchBuild.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="nuget" class="section">
+                <h1>nuget</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/nuget.png">
+                    <img src="Images/nuget.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="configurationManager" class="section">
+                <h1>ConfigurationManager</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/ConfigurationManager.png">
+                    <img src="Images/ConfigurationManager.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="addingUsingStatements" class="section">
+                <h1>AddingReferences</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/AddingUsings1.png">
+                    <img src="Images/AddingUsings1.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/AddingUsings2.png">
+                    <img src="Images/AddingUsings2.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="attachToProcess" class="section">
+                <h1>AddingReferences</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/attachToProcess.png">
+                    <img src="Images/attachToProcess.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="addingAReference" class="section">
+                <h1>AddingAReference</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/AddingReferenceToProject.png">
+                    <img src="Images/AddingReferenceToProject.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/AddingAReferenceToProjectInSolution.png">
+                    <img src="Images/AddingAReferenceToProjectInSolution.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="breakPoints" class="section">
+                <h1>AddingAReference</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/BreakPointBasic.png">
+                    <img src="Images/BreakPointBasic.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/BreakPointRightClick.png">
+                    <img src="Images/BreakPointRightClick.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="codeCoverage" class="section">
+                <h1>CodeCoverage</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/CodeCoverage.png">
+                    <img src="Images/CodeCoverage.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="codeAnalysys" class="section">
+                <h1>code Analysys</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/CodeAnalysysRules.png">
+                    <img src="Images/CodeAnalysysRules.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/RunCodeAnalysys.png">
+                    <img src="Images/RunCodeAnalysys.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/CodeAnalysysResults.png">
+                    <img src="Images/CodeAnalysysResults.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="outputs" class="section">
+                <h1>code Analysys</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/OutputWindow.png">
+                    <img src="Images/OutputWindow.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/ErrorOutput.png">
+                    <img src="Images/ErrorOutput.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/Warnings.png">
+                    <img src="Images/Warnings.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="tests" class="section">
+                <h1>code Analysys</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/RunAllTests.png">
+                    <img src="Images/RunAllTests.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/TestExplorer.png">
+                    <img src="Images/TestExplorer.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="FindAndReplace" class="section">
+                <h1>code Analysys</h1>
+                <hr />
+                <a class="fancybox" rel="group" href="Images/FindAndReplaceInFiles.png">
+                    <img src="Images/FindAndReplaceInFiles.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
+                    <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
+                </a>
+            </div>
         </div>
     </div>
     <!-- js -->

@@ -39,3 +39,10 @@ body
 {
     margin-bottom:60px;
 }
+#backToTop
+{
+    max-width:130px;
+    position:fixed;
+    top: 90%;
+    cursor:pointer;
+}
