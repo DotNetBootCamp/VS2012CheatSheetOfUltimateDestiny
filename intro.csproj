@@ -85,6 +85,7 @@
     <Content Include="Images\CodeCoverage.png" />
     <Content Include="Images\ConfigurationManager.png" />
     <Content Include="Images\defaultToolbar.png" />
+    <Content Include="Images\Designer.png" />
     <Content Include="Images\DualViewEditing.png" />
     <Content Include="Images\EditProjectXml1.png" />
     <Content Include="Images\EditProjectXml2.png" />
