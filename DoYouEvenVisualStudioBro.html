@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>VS 2012 Cheat Sheet</title>
@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="backToTop" >
-        <a onclick="$(window).scrollTop(0);" class="list-group-item">Back To Top</a>
+        <a onclick="$(window).scrollTop(0);" class="list-group-item"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;Back To Top</a>
     </div>
     <div class="row">
         <div class="col-md-2">
@@ -44,7 +44,7 @@
                 <a href="#addingAReference" class="list-group-item">addingAReference</a>
                 <a href="#breakPoints" class="list-group-item">breakPoints</a>
                 <a href="#codeCoverage" class="list-group-item">codeCoverage</a>
-                <a href="#codeAnalysys" class="list-group-item">codeAnalysys</a>
+                <a href="#codeAnalysis" class="list-group-item">codeAnalysis</a>
                 <a href="#outputs" class="list-group-item">outputs</a>
                 <a href="#tests" class="list-group-item">tests</a>
                 <a href="#FindAndReplace" class="list-group-item">FindAndReplace</a>
@@ -53,13 +53,13 @@
         <div class="col-md-10">
             <div class="header">
                 <h1>VS 2012 Cheat Sheet Of Ultimate Destiny <small>By Ryan Kotzen</small></h1>
-                <p>This is not a comprehensive overview for visual studio, more of a cheat sheet that people can use as a reference for some of the most common and important operations- (that I use or which I feel would be usefull to new developers). I did a clean install of VS2012 and proceeded to setup a basic environment since I am about to train people using this IDE. Due to licencing reasons, vs2013 won't be used, and 2015 is still in preview</p>
-                <p>I am by no means a front end developer but due to masochistic tendancies, this cheat sheet has been built using html, css & js instead of MS Word. Feel free to contribute at <a href="https://github.com/Sereph/VS2012CheatSheetOfUltimateDestiny">GitHub</a></p>
+                <p>This is not a comprehensive overview for visual studio, more of a cheat sheet that people can use as a reference for some of the most common and important operations- (that I use or which I feel would be useful to new developers). I did a clean install of VS2012 and proceeded to setup a basic environment since I am about to train people using this IDE. Due to licensing reasons, vs2013 won't be used, and 2015 is still in preview</p>
+                <p>I am by no means a front end developer but due to masochistic tenancies, this cheat sheet has been built using HTML, CSS & JavaScript instead of MS Word. Feel free to contribute at <a href="https://github.com/Sereph/VS2012CheatSheetOfUltimateDestiny">GitHub</a></p>
             </div>
             <div id="StartPage" class="section">
                 <h1>Start Page</h1>
                 <p>
-                    This will pop up every time you open visual studio instead of a project/sln/other file directly, feel free to turn it off using the buttons in the bottom right.<br />
+                    This will pop up every time you open visual studio instead of a project, solution, or other file directly, feel free to turn it off using the buttons in the bottom right.<br />
                     It will display your most recent solution files that you opened, and allow you to pin them there so they are always available. You can also create new projects from here, but this is easily accessible from the "file" menu or by right clicking on your solution file.
                 </p>
                 <a class="fancybox" rel="group" href="Images/StartPage.png">
@@ -80,15 +80,15 @@
             <div id="solutionExplorer" class="section">
                 <h1>Solution explorer</h1>
                 <hr />
-                <p>This is an overview of your project, a mini-map if you will. Represented as a tree view, it is important to note that this does not necessarily represent the underlying file structure. The structure is instead dictated by the solution and project's xml.</p>
+                <p>This is an overview of your project, a mini-map if you will. Represented as a tree view, it is important to note that this does not necessarily represent the underlying file structure. The structure is instead dictated by the solution and project's XML.</p>
                 <a class="fancybox" rel="group" href="Images/SolutionExplorer.png">
                     <img src="Images/SolutionExplorer.png" alt="" class="img-responsive" />
                 </a>
-                <p>The tree stucture itself is searchable and if "show all files" is enbled these will be searched as well.</p>
+                <p>The tree structure itself is searchable and if "show all files" is enabled these will be searched as well.</p>
                 <a class="fancybox" rel="group" href="Images/SearchingInSolutionTree.png">
                     <img src="Images/SearchingInSolutionTree.png" alt="" class="img-responsive" />
                 </a>
-                <p>If you are writing a web project, you can specify which page (html, cshtml, aspx) that will be displayed first when debugging the web application. Please note that if you are using MVC the router can override this, also if you happen to have a view open when you click the debug button, this can sometimes open instead</p>
+                <p>If you are writing a web project, you can specify which page (.html, .cshtml, .aspx) that will be displayed first when debugging the web application. Please note that if you are using MVC the router can override this, also if you happen to have a view open when you click the debug button, this can sometimes open instead</p>
                 <a class="fancybox" rel="group" href="Images/SetAsStartPage.png">
                     <img src="Images/SetAsStartPage.png" alt="" class="img-responsive" />
                 </a>
@@ -96,11 +96,11 @@
             <div id="keyboardShortcuts" class="section">
                 <h1>keyboardShortcuts</h1>
                 <hr />
-                <p>Do yourself a favour, get ReSharper, it will make your life better in almost every way, here is a handy dandy pdf with some common commands</p>
+                <p>Do yourself a favour, get ReSharper, it will make your life better in almost every way, here is a handy dandy .pdf with some common commands</p>
                 <a href="https://www.jetbrains.com/resharper/docs/ReSharper80DefaultKeymap_VS_scheme.pdf">ReSharper keyboard shortcuts</a>
                 <p>Here are the ones for stock:</p>
                 <a href="http://visualstudioshortcuts.com/2012/">VS2012 Keyboard Shortcuts</a>
-                <p>It may be tempting (and it is definitely possible) to change them to suit your needs, but when you are working at someone else's pc, that isn't going to work. I recommend you just get used to them as is.</p>
+                <p>It may be tempting (and it is definitely possible) to change them to suit your needs, but when you are working at someone else's PC, that isn't going to work. I recommend you just get used to them as is.</p>
             </div>
             <div id="turnOffPreview" class="section">
                 <h1>Turning off the preview "feature"</h1>
@@ -117,7 +117,7 @@
             <div id="editProjectXml" class="section">
                 <h1>Edit Project XML</h1>
                 <hr />
-                <p>If you are feeling brave or are a java dev at heart, you can delve into the xml config files for the project (and also for the solution itself). Generally not needed but can help fix a few rare issues</p>
+                <p>If you are feeling brave or are a Java dev at heart, you can delve into the XML config files for the project (and also for the solution itself). Generally not needed but can help fix a few rare issues</p>
                 <a class="fancybox" rel="group" href="Images/EditProjectXml1.png">
                     <img src="Images/EditProjectXml1.png" alt="" class="img-responsive" />
                 </a>
@@ -131,7 +131,7 @@
             <div id="changeTheme" class="section">
                 <h1>Change Theme</h1>
                 <hr />
-                <p>Personally I found that the light theme caused me more headaches and eye strain over prolonged periods. Your milage may vary,</p>
+                <p>Personally I found that the light theme caused me more headaches and eye strain over prolonged periods. Your mileage may vary,</p>
                 <a class="fancybox" rel="group" href="Images/ChangeTheme1.png">
                     <img src="Images/ChangeTheme1.png" alt="" class="img-responsive" />
                 </a>
@@ -142,7 +142,7 @@
             <div id="showFilesInFolder" class="section">
                 <h1>Show (hidden) Files In Folder</h1>
                 <hr />
-                <p>Sometimes it is useful to include and exclude files from the project (xml) but still have them in the files system. For example the bin and obj folders are created as part of the build process but are rarely needed when using the project itself.</p>
+                <p>Sometimes it is useful to include and exclude files from the project (XML) but still have them in the files system. For example the bin and obj folders are created as part of the build process but are rarely needed when using the project itself.</p>
                 <a class="fancybox" rel="group" href="Images/ShowAllFilesInFolder1.png">
                     <img src="Images/ShowAllFilesInFolder1.png" alt="" class="img-responsive" />
                 </a>
@@ -153,7 +153,7 @@
             <div id="fileProperties" class="section">
                 <h1>File Properties</h1>
                 <hr />
-                <p>Sometimes you need to ensure that a file (such as a custom config file) gets copied to the output directory (bin\debug) so that it is accessible by your applicaion. This window allows you to configure this, amongst other things</p>
+                <p>Sometimes you need to ensure that a file (such as a custom config file) gets copied to the output directory (bin\debug) so that it is accessible by your application. This window allows you to configure this, amongst other things</p>
                 <a class="fancybox" rel="group" href="Images/FileProperties.png">
                     <img src="Images/FileProperties.png" alt="" class="img-responsive" />
                 </a>
@@ -177,7 +177,7 @@
             <div id="textEditor" class="section">
                 <h1>textEditor</h1>
                 <hr />
-                <p>This is where the vast majority of your work will be done, get familar with it and how to get the best out of it. *hint*, get ReSharper. Intellisense (autocomplete) can be accesed by hiting ctrl+space while typing and is one of the most useful features of the IDE</p>
+                <p>This is where the vast majority of your work will be done, get familiar with it and how to get the best out of it. *hint*, get ReSharper. IntelliSense (auto complete) can be accessed by hitting ctrl+space while typing and is one of the most useful features of the IDE</p>
                 <a class="fancybox" rel="group" href="Images/textEditor.png">
                     <img src="Images/textEditor.png" alt="" class="img-responsive" />
                 </a>
@@ -185,15 +185,15 @@
                 <a class="fancybox" rel="group" href="Images/DualViewEditing.png">
                     <img src="Images/DualViewEditing.png" alt="" class="img-responsive" />
                 </a>
-                <p>Dont use this for web applications, just dont. Useful for XAML/Win Forms applications</p>
+                <p>Don't use this for web applications, just don't. If you work in the web industry, you need to know and understand HTML and the properties available to you. Useful for XAML/Win Forms applications</p>
                 <a class="fancybox" rel="group" href="Images/Designer.png">
                     <img src="Images/Designer.png" alt="" class="img-responsive" />
                 </a>
             </div>
             <div id="toolbars" class="section">
-                <h1>toolbars</h1>
+                <h1>Toolbars</h1>
                 <hr />
-                <p>These contain all sorts of useful features and can be heavily customised, basically most of features from the menus can be added as quick actions on the toolbars. By default it is primarily used to start debuging and changing the environment between release and debug (as well as any others you may have set up).</p>
+                <p>These contain all sorts of useful features and can be heavily customised, basically most of features from the menus can be added as quick actions on the toolbars. By default it is primarily used to start debugging and changing the environment between release and debug (as well as any others you may have set up).</p>
                 <a class="fancybox" rel="group" href="Images/defaultToolbar.png">
                     <img src="Images/defaultToolbar.png" alt="" class="img-responsive" />
                 </a>
@@ -210,9 +210,9 @@
                 </a>
             </div>
             <div id="nuget" class="section">
-                <h1>nuget</h1>
+                <h1>NuGet</h1>
                 <hr />
-                <p>This is the way that external libraries can easily be managed withing a .Net solution. It is equivelent to NPM, Bower or Maven in other languages</p>
+                <p>This is the way that external libraries can easily be managed withing a .Net solution. It is equivalent to NPM, Bower or Maven in other languages</p>
                 <a class="fancybox" rel="group" href="Images/nuget.png">
                     <img src="Images/nuget.png" alt="" class="img-responsive" />
                 </a>
@@ -268,21 +268,21 @@
                     <img src="Images/CodeCoverage.png" alt="" class="img-responsive" />
                 </a>
             </div>
-            <div id="codeAnalysys" class="section">
-                <h1>code Analysys</h1>
+            <div id="codeAnalysis" class="section">
+                <h1>Code Analysis</h1>
                 <hr />
-                <a class="fancybox" rel="group" href="Images/CodeAnalysysRules.png">
-                    <img src="Images/CodeAnalysysRules.png" alt="" class="img-responsive" />
+                <a class="fancybox" rel="group" href="Images/codeAnalysisRules.png">
+                    <img src="Images/codeAnalysisRules.png" alt="" class="img-responsive" />
                 </a>
-                <a class="fancybox" rel="group" href="Images/RunCodeAnalysys.png">
-                    <img src="Images/RunCodeAnalysys.png" alt="" class="img-responsive" />
+                <a class="fancybox" rel="group" href="Images/RuncodeAnalysis.png">
+                    <img src="Images/RuncodeAnalysis.png" alt="" class="img-responsive" />
                 </a>
-                <a class="fancybox" rel="group" href="Images/CodeAnalysysResults.png">
-                    <img src="Images/CodeAnalysysResults.png" alt="" class="img-responsive" />
+                <a class="fancybox" rel="group" href="Images/codeAnalysisResults.png">
+                    <img src="Images/codeAnalysisResults.png" alt="" class="img-responsive" />
                 </a>
             </div>
             <div id="outputs" class="section">
-                <h1>code Analysys</h1>
+                <h1>outputs</h1>
                 <hr />
                 <a class="fancybox" rel="group" href="Images/OutputWindow.png">
                     <img src="Images/OutputWindow.png" alt="" class="img-responsive" />
@@ -295,7 +295,7 @@
                 </a>
             </div>
             <div id="tests" class="section">
-                <h1>code Analysys</h1>
+                <h1>tests</h1>
                 <hr />
                 <a class="fancybox" rel="group" href="Images/RunAllTests.png">
                     <img src="Images/RunAllTests.png" alt="" class="img-responsive" />
@@ -305,7 +305,7 @@
                 </a>
             </div>
             <div id="FindAndReplace" class="section">
-                <h1>code Analysys</h1>
+                <h1>FindAndReplace</h1>
                 <hr />
                 <a class="fancybox" rel="group" href="Images/FindAndReplaceInFiles.png">
                     <img src="Images/FindAndReplaceInFiles.png" alt="" class="img-responsive" />
@@ -313,6 +313,24 @@
                 <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
                     <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
                 </a>
+            </div>
+            <div id="usefulExtensions" class="section">
+                <h1>usefulExtensions</h1>
+                <hr />
+                <ul>
+                    <li>Ghost Doc</li>
+                    <li>Node tools for visual studio</li>
+                    <li>Visual Studio Spell Checker</li>
+                    <li>ReSharper</li>
+                    <li>Web Essentials</li>
+                    <li>Sandcastle Help File Builder</li>
+                </ul>
+                <!--<a class="fancybox" rel="group" href="Images/FindAndReplaceInFiles.png">
+                    <img src="Images/FindAndReplaceInFiles.png" alt="" class="img-responsive" />
+                </a>
+                <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
+                    <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
+                </a>-->
             </div>
         </div>
     </div>
