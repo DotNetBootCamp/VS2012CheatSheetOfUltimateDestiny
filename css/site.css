@@ -21,15 +21,15 @@ body
 .header
 {
     padding: 60px 0;
-    background-color: #6f5499;
-    background-image: linear-gradient(to bottom, #563d7c 0px, #6f5499 100%);
+    background-color: #28614d;
+    background-image: linear-gradient(to bottom, #28614d 0, #3e9677 100%);
     background-repeat: repeat-x;
-    color: #cdbfe3;
+    color: #bfffe9;
     margin-top:2%;
 }
 .header small
 {
-    color: #B6ABC9;
+    color: #e7fff7;
 }
 .header p, .section p
 {

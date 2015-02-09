@@ -80,10 +80,11 @@
     <Content Include="Images\BreakPointRightClick.png" />
     <Content Include="Images\ChangeTheme1.png" />
     <Content Include="Images\ChangeTheme2.png" />
-    <Content Include="Images\CodeAnalysysResults.png" />
-    <Content Include="Images\CodeAnalysysRules.png" />
+    <Content Include="Images\CodeAnalysisResults.png" />
+    <Content Include="Images\CodeAnalysisRules.png" />
     <Content Include="Images\CodeCoverage.png" />
     <Content Include="Images\ConfigurationManager.png" />
+    <Content Include="Images\ConfigurationManagerHowToGetThere.png" />
     <Content Include="Images\defaultToolbar.png" />
     <Content Include="Images\Designer.png" />
     <Content Include="Images\DualViewEditing.png" />
@@ -101,7 +102,7 @@
     <Content Include="Images\OutputWindow.png" />
     <Content Include="Images\rightClickToolbarsMenu.png" />
     <Content Include="Images\RunAllTests.png" />
-    <Content Include="Images\RunCodeAnalysys.png" />
+    <Content Include="Images\RunCodeAnalysis.png" />
     <Content Include="Images\SearchingInSolutionTree.png" />
     <Content Include="Images\SetAsStartPage.png" />
     <Content Include="Images\ShowAllFilesInFolder1.png" />
