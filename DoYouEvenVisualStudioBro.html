@@ -250,9 +250,11 @@
             <div id="addingAReference" class="section">
                 <h1>Adding A Reference</h1>
                 <hr />
+                <p>If you need to add a reference to a built in library that is installed to the global assembly cache (GAC) and which does not come from NuGet, you can do this here.</p>
                 <a class="fancybox" rel="group" href="Images/AddingReferenceToProject.png">
                     <img src="Images/AddingReferenceToProject.png" alt="" class="img-responsive" />
                 </a>
+                <p>You can also use the screen to add references to projects within your solution. e.g. add a reference to your service layer project from your Asp.Net MVC project</p>
                 <a class="fancybox" rel="group" href="Images/AddingAReferenceToProjectInSolution.png">
                     <img src="Images/AddingAReferenceToProjectInSolution.png" alt="" class="img-responsive" />
                 </a>
@@ -260,9 +262,11 @@
             <div id="breakPoints" class="section">
                 <h1>Break Points</h1>
                 <hr />
+                <p>When you are debugging your code and the process gets to this point in your code, execution will stop until you instruct it to continue</p>
                 <a class="fancybox" rel="group" href="Images/BreakPointBasic.png">
                     <img src="Images/BreakPointBasic.png" alt="" class="img-responsive" />
                 </a>
+                <p>These breakpoints can be disabled/enabled and can actually be set to only interrupt the program flow based on a condition such as hit count or variable value. You can also add commands to be run when the breakpoint is hit, such as print a message and then automatically continue execution.</p>
                 <a class="fancybox" rel="group" href="Images/BreakPointRightClick.png">
                     <img src="Images/BreakPointRightClick.png" alt="" class="img-responsive" />
                 </a>
@@ -270,6 +274,7 @@
             <div id="codeCoverage" class="section">
                 <h1>Code Coverage</h1>
                 <hr />
+                <p>Knowing which parts of your code are covered by tests and to what extent is a very useful measure. However please note that having 100% code coverage is not a guarantee that your code is bug free! Don't get a false sense of confidence</p>
                 <a class="fancybox" rel="group" href="Images/CodeCoverage.png">
                     <img src="Images/CodeCoverage.png" alt="" class="img-responsive" />
                 </a>
@@ -277,12 +282,15 @@
             <div id="codeAnalysis" class="section">
                 <h1>Code Analysis</h1>
                 <hr />
+                <p>By right clicking on the solution and clicking properties you can set up which ruleset to use when running the code analysis on the solution. For most C# use-cases the "Microsoft Managed Recommend Rules" should be sufficient.</p>
                 <a class="fancybox" rel="group" href="Images/codeAnalysisRules.png">
                     <img src="Images/codeAnalysisRules.png" alt="" class="img-responsive" />
                 </a>
+                <p>Here you can see the menu item that will allow you to run the code analysis</p>
                 <a class="fancybox" rel="group" href="Images/RuncodeAnalysis.png">
                     <img src="Images/RuncodeAnalysis.png" alt="" class="img-responsive" />
                 </a>
+                <p>Here are the results from the code analysis</p>
                 <a class="fancybox" rel="group" href="Images/codeAnalysisResults.png">
                     <img src="Images/codeAnalysisResults.png" alt="" class="img-responsive" />
                 </a>
@@ -290,12 +298,15 @@
             <div id="outputs" class="section">
                 <h1>Outputs</h1>
                 <hr />
+                <p>The output window fulfills the function of the console and displays all the various outputs from your build process as well as the run time process during debugging.</p>
                 <a class="fancybox" rel="group" href="Images/OutputWindow.png">
                     <img src="Images/OutputWindow.png" alt="" class="img-responsive" />
                 </a>
+                <p>The error window shows all of the compile time errors, these errors can be double clicked to take you to the code responsible for the error</p>
                 <a class="fancybox" rel="group" href="Images/ErrorOutput.png">
                     <img src="Images/ErrorOutput.png" alt="" class="img-responsive" />
                 </a>
+                <p>The warnings window shows (potential) issues within your code bases and these should be kept to a minimum</p>
                 <a class="fancybox" rel="group" href="Images/Warnings.png">
                     <img src="Images/Warnings.png" alt="" class="img-responsive" />
                 </a>
@@ -303,9 +314,11 @@
             <div id="tests" class="section">
                 <h1>Tests</h1>
                 <hr />
+                <p>From this window you can run and debug the tests within your solution. All your tests should be set up to run on your CI/Nightly build</p>
                 <a class="fancybox" rel="group" href="Images/RunAllTests.png">
                     <img src="Images/RunAllTests.png" alt="" class="img-responsive" />
                 </a>
+                <p>Here you can see the results of the test run and navigate to the tests in question.</p>
                 <a class="fancybox" rel="group" href="Images/TestExplorer.png">
                     <img src="Images/TestExplorer.png" alt="" class="img-responsive" />
                 </a>
@@ -313,9 +326,11 @@
             <div id="FindAndReplace" class="section">
                 <h1>Find And Replace</h1>
                 <hr />
+                <p>Where possible it is preferable to rename items using the refactoring tool as this can find other references. However some times you will need to use the standard find and replace tool, this particular one allows you to do it across multiple files and has advanced options. Please note that if you choose "Entire Solution" this will NOT include files that haven't been included in the Solution Itself i.e. the XML</p>
                 <a class="fancybox" rel="group" href="Images/FindAndReplaceInFiles.png">
                     <img src="Images/FindAndReplaceInFiles.png" alt="" class="img-responsive" />
                 </a>
+                <p>This is the simple find and replace tool for the current file, although it can be applied to the entire solution</p>
                 <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
                     <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
                 </a>
