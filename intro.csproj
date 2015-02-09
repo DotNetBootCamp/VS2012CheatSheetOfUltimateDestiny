@@ -78,8 +78,10 @@
     <Content Include="Images\BatchBuild.png" />
     <Content Include="Images\BreakPointBasic.png" />
     <Content Include="Images\BreakPointRightClick.png" />
+    <Content Include="Images\CalculateCodeMetrics.png" />
     <Content Include="Images\ChangeTheme1.png" />
     <Content Include="Images\ChangeTheme2.png" />
+    <Content Include="Images\ClassDiagram.png" />
     <Content Include="Images\CodeAnalysisResults.png" />
     <Content Include="Images\CodeAnalysisRules.png" />
     <Content Include="Images\CodeCoverage.png" />
@@ -100,6 +102,8 @@
     <Content Include="Images\NewProjectAndSolution.png" />
     <Content Include="Images\nuget.png" />
     <Content Include="Images\OutputWindow.png" />
+    <Content Include="Images\ProjectProperties.png" />
+    <Content Include="Images\Publish.png" />
     <Content Include="Images\rightClickToolbarsMenu.png" />
     <Content Include="Images\RunAllTests.png" />
     <Content Include="Images\RunCodeAnalysis.png" />

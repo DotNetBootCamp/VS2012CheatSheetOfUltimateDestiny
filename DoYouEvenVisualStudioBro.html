@@ -32,6 +32,7 @@
                 <a href="#changeTheme" class="list-group-item">Change Theme</a>
                 <a href="#showFilesInFolder" class="list-group-item">Show all files in folder</a>
                 <a href="#fileProperties" class="list-group-item">File Properties</a>
+                <a href="#projectProperties" class="list-group-item">Project Properties</a>
                 <a href="#gitExtensionsBar" class="list-group-item">Git Extensions Bar</a>
                 <a href="#toolbox" class="list-group-item">Toolbox</a>
                 <a href="#textEditor" class="list-group-item">Text Editor</a>
@@ -45,9 +46,12 @@
                 <a href="#breakPoints" class="list-group-item">Break Points</a>
                 <a href="#codeCoverage" class="list-group-item">Code Coverage</a>
                 <a href="#codeAnalysis" class="list-group-item">Code Analysis</a>
+                <a href="#calculateCodeMetrics" class="list-group-item">Calculate Code Metrics</a>
                 <a href="#outputs" class="list-group-item">Outputs</a>
                 <a href="#tests" class="list-group-item">Tests</a>
                 <a href="#findAndReplace" class="list-group-item">Find And Replace</a>
+                <a href="#publish" class="list-group-item">Publish</a>
+                <a href="#classDiagram" class="list-group-item">Class Diagram</a>
                 <a href="#usefulExtensions" class="list-group-item">Useful Extensions</a>
             </div>
         </div>
@@ -157,6 +161,14 @@
                 <p>Sometimes you need to ensure that a file (such as a custom config file) gets copied to the output directory (bin\debug) so that it is accessible by your application. This window allows you to configure this, amongst other things</p>
                 <a class="fancybox" rel="group" href="Images/FileProperties.png">
                     <img src="Images/FileProperties.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="projectProperties" class="section">
+                <h1>Project Properties</h1>
+                <hr />
+                <p>This window allows you to control the project specific settings and so is context specific based on the type of project. You can add pre and post build events, set up how the project is hosted during the debug process, set the .net framework version and digitally sign the project's dll</p>
+                <a class="fancybox" rel="group" href="Images/ProjectProperties.png">
+                    <img src="Images/ProjectProperties.png" alt="" class="img-responsive" />
                 </a>
             </div>
             <div id="gitExtensionsBar" class="section">
@@ -296,6 +308,14 @@
                     <img src="Images/codeAnalysisResults.png" alt="" class="img-responsive" />
                 </a>
             </div>
+            <div id="calculateCodeMetrics" class="section">
+                <h1>Calculate Code Metrics</h1>
+                <hr />
+                <p>This allows you to perform static code analysis on your project to identify potential maintenance issues</p>
+                <a class="fancybox" rel="group" href="Images/CalculateCodeMetrics.png">
+                    <img src="Images/CalculateCodeMetrics.png" alt="" class="img-responsive" />
+                </a>
+            </div>
             <div id="outputs" class="section">
                 <h1>Outputs</h1>
                 <hr />
@@ -334,6 +354,22 @@
                 <p>This is the simple find and replace tool for the current file, although it can be applied to the entire solution</p>
                 <a class="fancybox" rel="group" href="Images/FindAndReplaceCurrentFile.png">
                     <img src="Images/FindAndReplaceCurrentFile.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="publish" class="section">
+                <h1>Publish</h1>
+                <hr />
+                <p>This window allows you to set up all the various publishing options from publishing to the file system to directly uploading to Azure. This window should generally not be used as your publish should be happening from your build server, using an automated, repeatable process. Another problem with using this is that it promotes checking in your live credentials to version control, meaning all developers and observers have access to love. If your live deployments happen from here, you are doing it wrong.</p>
+                <a class="fancybox" rel="group" href="Images/Publish.png">
+                    <img src="Images/Publish.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div id="classDiagram" class="section">
+                <h1>Class Diagram</h1>
+                <hr />
+                <p>This can be useful if you join a project that is already underway and you would like to get an overview of how the classes fit together</p>
+                <a class="fancybox" rel="group" href="Images/ClassDiagram.png">
+                    <img src="Images/ClassDiagram.png" alt="" class="img-responsive" />
                 </a>
             </div>
             <div id="usefulExtensions" class="section">
